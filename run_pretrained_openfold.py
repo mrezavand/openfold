@@ -22,6 +22,10 @@ import random
 import time
 import json
 
+# Gaudi enablement
+import habana_frameworks.torch.gpu_migration
+import habana_frameworks.torch.core as htcore
+
 logging.basicConfig()
 logger = logging.getLogger(__file__)
 logger.setLevel(level=logging.INFO)

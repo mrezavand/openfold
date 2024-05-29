@@ -21,6 +21,10 @@ from openfold.utils.tensor_utils import tree_map
 import tests.compare_utils as compare_utils
 from tests.config import consts
 
+# Gaudi enablement
+import habana_frameworks.torch.gpu_migration
+import habana_frameworks.torch.core as htcore
+
 if compare_utils.alphafold_is_installed():
     alphafold = compare_utils.import_alphafold()
     import jax
